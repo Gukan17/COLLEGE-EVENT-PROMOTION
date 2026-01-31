@@ -1,0 +1,138 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: #ffffff;
+
+    /* FIX */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;   /* 👈 key change */
+    padding: 40px 0;           /* 👈 space at top */
+}
+
+/* Glass card */
+.event-card {
+    width: 85%;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    margin-top: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 42px;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* Department badge */
+.dept-badge {
+    display: inline-block;
+    background: linear-gradient(to right, #38bdf8, #22c55e);
+    color: #000;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Info section */
+.info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.info-box {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 12px 18px;
+    border-radius: 12px;
+    margin: 5px;
+    flex: 1;
+    text-align: center;
+}
+
+/* About */
+.about {
+    margin: 25px 0;
+}
+
+.about h2,
+.schedule h2 {
+    margin-bottom: 10px;
+    color: #38bdf8;
+}
+
+.about p {
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background: #38bdf8;
+    color: #000;
+    padding: 12px;
+}
+
+td {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    text-align: center;
+}
+
+tr:hover td {
+    background: rgba(56, 189, 248, 0.25);
+}
+
+/* Register button */
+.register {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.register-btn {
+    background: linear-gradient(135deg, #22c55e, #38bdf8);
+    color: #000;
+    font-size: 20px;
+    padding: 16px 40px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Hover effect (scale + glow) */
+.register-btn:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 25px #38bdf8;
+}
